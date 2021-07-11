@@ -1,0 +1,41 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
+    "prisma:migrate": "prisma migrate dev --",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio",
+    "prisma:reset": "prisma migrate reset",
+    "prisma:format": "prisma format",
+    "p:m": "yarn prisma:migrate",
+    "p:g": "yarn prisma:generate",
+    "p:s": "yarn prisma:studio",
+    "p:r": "yarn prisma:reset",
+    "p:f": "yarn prisma:format",
+    "seed": "prisma db seed --preview-feature",
+    "format": "prettier --write ./**/*.{ts,tsx}"
+  },
+  "dependencies": {
+    "@prisma/client": "2",
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "swr": "^0.5.6",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@types/react": "17.0.13",
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1",
+    "prettier": "2.3.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  }
+}
